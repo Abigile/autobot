@@ -19,14 +19,19 @@ def greet_user(bot,update):
 
 def talk_to_me(bot, update):
 	#принимаем текст от пользователя
-	user_text = "Привет {}! Ты написал: {}".format(update.message.chat.first_name,update.message.text)
-	print(update.message)
+	user_text = "Привет {}! Ты написал: {}".format(
+		update.message.chat.first_name,update.message.text)
+
+	logging.info("User: %s, Chat id: %s, Message: %s", update.message.chat.username, 
+		update.message.chat.id, update.message.text)
+	
 	#отправляем текст пользователю
 	update.message.reply_text(user_text)
 
 def main():
 	'''Тело бота. Главная функция.'''
-	mybot = Updater("659874606:AAH7vMN9q6Lxrcj2J0LRSRX9tfn3LZHT-Jo",request_kwargs=PROXY)
+	mybot = Updater("659874606:AAH7vMN9q6Lxrcj2J0LRSRX9tfn3LZHT-Jo",
+		request_kwargs=PROXY)
 
 	logging.info('бот запускается')
 	
