@@ -1,0 +1,389 @@
+2018-09-14 13:29:52,769 - root - INFO - бот запускается
+2018-09-14 13:30:10,503 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet mars
+2018-09-14 13:30:30,892 - root - INFO - User: kirillffds, Chat id: 515654323, Message: 7987
+2018-09-14 13:32:50,957 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 13:32:57,562 - root - INFO - бот запускается
+2018-09-14 13:33:03,245 - root - INFO - User: kirillffds, Chat id: 515654323, Message: tiutuy
+2018-09-14 13:33:15,700 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet
+2018-09-14 13:33:16,109 - telegram.ext.dispatcher - WARNING - A TelegramError was raised while processing the Update
+2018-09-14 13:33:16,109 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 38, in astronom
+    update.message.chat.id, update.message.text)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\message.py", line 455, in reply_text
+    return self.bot.send_message(self.chat_id, *args, **kwargs)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\bot.py", line 65, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\bot.py", line 90, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\utils\request.py", line 309, in post
+    headers={'Content-Type': 'application/json'})
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\utils\request.py", line 223, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Unsupported parse_mode
+2018-09-14 13:33:29,905 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet mars
+2018-09-14 13:33:30,326 - telegram.ext.dispatcher - WARNING - A TelegramError was raised while processing the Update
+2018-09-14 13:33:30,326 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 38, in astronom
+    update.message.chat.id, update.message.text)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\message.py", line 455, in reply_text
+    return self.bot.send_message(self.chat_id, *args, **kwargs)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\bot.py", line 65, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\bot.py", line 90, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\utils\request.py", line 309, in post
+    headers={'Content-Type': 'application/json'})
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\utils\request.py", line 223, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Unsupported parse_mode
+2018-09-14 13:35:04,848 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 13:35:51,912 - root - INFO - бот запускается
+2018-09-14 13:36:07,025 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet
+2018-09-14 13:38:32,887 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet mars
+2018-09-14 13:40:24,759 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 13:40:30,571 - root - INFO - бот запускается
+2018-09-14 13:40:39,472 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet
+2018-09-14 13:40:57,393 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet mars
+2018-09-14 13:42:13,025 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 13:42:20,452 - root - INFO - бот запускается
+2018-09-14 13:42:37,298 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet mars
+2018-09-14 13:42:57,246 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet
+2018-09-14 15:02:51,319 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 15:24:03,240 - root - INFO - бот запускается
+2018-09-14 15:24:18,222 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet
+2018-09-14 15:24:38,356 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet марс
+2018-09-14 15:26:54,013 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 15:26:58,959 - root - INFO - бот запускается
+2018-09-14 15:27:15,707 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet марс
+2018-09-14 15:27:15,707 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 32, in astronom
+    update.message.reply_text(len(input_user) + 'после команды /planet, введите название одной планеты')
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+2018-09-14 15:27:34,768 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet марс
+2018-09-14 15:27:34,769 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 32, in astronom
+    update.message.reply_text(len(input_user) + 'после команды /planet, введите название одной планеты')
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+2018-09-14 15:27:41,072 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet
+2018-09-14 15:27:41,073 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 32, in astronom
+    update.message.reply_text(len(input_user) + 'после команды /planet, введите название одной планеты')
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+2018-09-14 15:28:20,713 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 15:28:33,188 - root - INFO - бот запускается
+2018-09-14 15:28:54,188 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet марс
+2018-09-14 15:30:11,366 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 15:30:18,173 - root - INFO - бот запускается
+2018-09-14 15:30:33,076 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet марс
+2018-09-14 15:32:28,294 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 15:32:34,893 - root - INFO - бот запускается
+2018-09-14 15:32:47,700 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet марс
+2018-09-14 15:34:09,290 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 15:34:13,385 - root - INFO - бот запускается
+2018-09-14 15:34:26,512 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet марс
+2018-09-14 15:34:26,513 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 36, in astronom
+    date = date.strftime('%Y.%m.%d')
+AttributeError: 'builtin_function_or_method' object has no attribute 'strftime'
+2018-09-14 15:38:05,697 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 15:38:10,111 - root - INFO - бот запускается
+2018-09-14 15:38:24,990 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet марс
+2018-09-14 15:38:24,991 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 36, in astronom
+    date = date.strftime('%Y/%m/%d')
+AttributeError: 'builtin_function_or_method' object has no attribute 'strftime'
+2018-09-14 15:39:53,973 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 15:40:03,475 - root - INFO - бот запускается
+2018-09-14 15:40:13,056 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet марс
+2018-09-14 15:40:13,057 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 76, in astronom
+    if text_planet[1] == sign:
+UnboundLocalError: local variable 'text_planet' referenced before assignment
+2018-09-14 15:41:35,117 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 15:41:42,508 - root - INFO - бот запускается
+2018-09-14 15:42:19,847 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet
+2018-09-14 15:42:19,848 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 77, in astronom
+    if text_planet[1] == sign:
+KeyError: 1
+2018-09-14 15:42:26,684 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet
+2018-09-14 15:42:26,685 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 77, in astronom
+    if text_planet[1] == sign:
+KeyError: 1
+2018-09-14 15:42:35,981 - root - INFO - text
+2018-09-14 15:42:40,399 - root - INFO - User: kirillffds, Chat id: 515654323, Message: hkug
+2018-09-14 15:42:44,985 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet
+2018-09-14 15:42:44,985 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 77, in astronom
+    if text_planet[1] == sign:
+KeyError: 1
+2018-09-14 15:48:13,247 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 15:48:21,020 - root - INFO - бот запускается
+2018-09-14 15:48:32,396 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet
+2018-09-14 15:48:32,609 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 77, in astronom
+    if text_planet[1] == sign:
+KeyError: 1
+2018-09-14 15:49:05,795 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet марс
+2018-09-14 15:49:06,082 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 77, in astronom
+    if text_planet[1] == sign:
+KeyError: 1
+2018-09-14 15:54:36,715 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 15:54:49,783 - root - INFO - бот запускается
+2018-09-14 15:55:24,397 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet марс
+2018-09-14 15:55:24,398 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 41, in astronom
+    update.message.reply_text(text_planet + date + planet + input_user_this)
+TypeError: unsupported operand type(s) for +: 'dict' and 'str'
+2018-09-14 15:57:21,059 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 15:57:31,775 - root - INFO - бот запускается
+2018-09-14 15:57:50,648 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet марс
+2018-09-14 15:57:51,076 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 43, in astronom
+    update.message.reply_text(planet)
+UnboundLocalError: local variable 'planet' referenced before assignment
+2018-09-14 15:58:51,397 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet mars
+2018-09-14 15:58:51,940 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 43, in astronom
+    update.message.reply_text(planet)
+UnboundLocalError: local variable 'planet' referenced before assignment
+2018-09-14 15:59:36,668 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet меркурий
+2018-09-14 15:59:37,100 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 43, in astronom
+    update.message.reply_text(planet)
+UnboundLocalError: local variable 'planet' referenced before assignment
+2018-09-14 16:09:40,406 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 16:09:47,860 - root - INFO - бот запускается
+2018-09-14 16:10:20,863 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet меркурий
+2018-09-14 16:10:21,275 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 44, in astronom
+    update.message.reply_text(input_user_this)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\message.py", line 455, in reply_text
+    return self.bot.send_message(self.chat_id, *args, **kwargs)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\bot.py", line 65, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\bot.py", line 90, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\utils\request.py", line 308, in post
+    body=json.dumps(data).encode('utf-8'),
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'builtin_function_or_method' is not JSON serializable
+2018-09-14 16:15:28,180 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet
+2018-09-14 16:15:28,611 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 44, in astronom
+    update.message.reply_text(input_user_this)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\message.py", line 455, in reply_text
+    return self.bot.send_message(self.chat_id, *args, **kwargs)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\bot.py", line 65, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\bot.py", line 90, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\utils\request.py", line 308, in post
+    body=json.dumps(data).encode('utf-8'),
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'builtin_function_or_method' is not JSON serializable
+2018-09-14 16:23:08,954 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 16:23:14,859 - root - INFO - бот запускается
+2018-09-14 16:23:46,137 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet меркурий
+2018-09-14 16:27:53,642 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 16:38:39,927 - root - INFO - бот запускается
+2018-09-14 16:38:54,985 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet меркурий
+2018-09-14 16:38:54,985 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 81, in astronom
+    if text_planet[1] == sign:
+KeyError: 1
+2018-09-14 16:39:00,047 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet
+2018-09-14 16:39:00,048 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 81, in astronom
+    if text_planet[1] == sign:
+KeyError: 1
+2018-09-14 16:39:50,810 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 16:42:12,815 - root - INFO - бот запускается
+2018-09-14 16:43:49,941 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet
+2018-09-14 16:44:16,459 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet меркурий
+2018-09-14 16:50:04,104 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 16:50:08,515 - root - INFO - бот запускается
+2018-09-14 16:50:22,096 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet
+2018-09-14 16:50:22,284 - telegram.ext.dispatcher - WARNING - A TelegramError was raised while processing the Update
+2018-09-14 16:50:22,285 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 42, in astronom
+    update.message.reply_text(input_user_this)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\message.py", line 455, in reply_text
+    return self.bot.send_message(self.chat_id, *args, **kwargs)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\bot.py", line 65, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\bot.py", line 90, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\utils\request.py", line 309, in post
+    headers={'Content-Type': 'application/json'})
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\utils\request.py", line 223, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message text is empty
+2018-09-14 16:50:22,293 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet
+2018-09-14 16:50:22,482 - telegram.ext.dispatcher - WARNING - A TelegramError was raised while processing the Update
+2018-09-14 16:50:22,482 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 42, in astronom
+    update.message.reply_text(input_user_this)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\message.py", line 455, in reply_text
+    return self.bot.send_message(self.chat_id, *args, **kwargs)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\bot.py", line 65, in decorator
+    result = func(self, *args, **kwargs)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\bot.py", line 90, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\utils\request.py", line 309, in post
+    headers={'Content-Type': 'application/json'})
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\utils\request.py", line 223, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message text is empty
+2018-09-14 16:50:27,525 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet меркурий
+2018-09-14 16:54:54,355 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet сатурн
+2018-09-14 16:57:17,269 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2018-09-14 16:57:22,623 - root - INFO - бот запускается
+2018-09-14 16:58:07,807 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet сатурн
+2018-09-14 17:01:18,231 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet юпитер
+2018-09-14 17:02:51,224 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet плутон
+2018-09-14 17:03:02,301 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet марс
+2018-09-14 17:03:14,862 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet пораора
+2018-09-14 17:03:15,318 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "C:\Users\Ольга\AppData\Local\Programs\Python\Python36\lib\site-packages\telegram\ext\commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "C:\projects\autobot\bot.py", line 80, in astronom
+    if text_planet[-1] == sign:
+KeyError: -1
+2018-09-14 17:05:13,384 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet юпитер
+2018-09-14 17:06:46,958 - root - INFO - User: kirillffds, Chat id: 515654323, Message: /planet нептун
+2018-09-14 18:12:02,004 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
