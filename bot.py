@@ -1,7 +1,8 @@
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import logging
 import settings
 import datetime
+
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import ephem
 
 #Настройки лога
@@ -19,7 +20,8 @@ def greet_user(bot,update):
 
 def astronom(bot, update):
 
-	logging.info("User: %s, Chat id: %s, Message: %s", update.message.chat.username,update.message.chat.id, update.message.text)
+	logging.info("User: %s, Chat id: %s, Message: %s",
+	 update.message.chat.username,update.message.chat.id, update.message.text)
 
 	input_user = update.message.text
 	input_user = input_user.split('planet')
@@ -41,43 +43,44 @@ def astronom(bot, update):
 			planet = ephem.Mercury(date)
 			text_planet = ephem.constellation(planet)
 
-		if input_user_this == "венера":
+		elif input_user_this == "венера":
 			planet = ephem.Venus(date)
 			text_planet = ephem.constellation(planet)
 
-		if input_user_this == "марс":
+		elif input_user_this == "марс":
 			planet = ephem.Mars(date)
 			text_planet = ephem.constellation(planet)
 
-		if input_user_this == "юпитер":
+		elif input_user_this == "юпитер":
 			planet = ephem.Jupiter(date)
 			text_planet = ephem.constellation(planet)
 
-		if input_user_this == "сатурн":
+		elif input_user_this == "сатурн":
 			planet = ephem.Saturn(date)
 			text_planet = ephem.constellation(planet)
 
-		if input_user_this == "уран":
+		elif input_user_this == "уран":
 			planet = ephem.Uranus(date)
 			text_planet = ephem.constellation(planet)
 
-		if input_user_this == "нептун":
+		elif input_user_this == "нептун":
 			planet = ephem.Neptune(date)
 			text_planet = ephem.constellation(planet)
 
-		if input_user_this == "плутон":
+		elif input_user_this == "плутон":
 			planet = ephem.Pluto(date)
 			text_planet = ephem.constellation(planet)
 		
-		signs = {"Aquarius": "Водолея", "Aries": "Овна", "Cancer": "Рака", "Capricornus": "Козерога", "Gemini": "Близнецов", "Leo": "Льва", "Libra": "Весов", "Ophiuchus": "Змееносца", "Pisces": "Рыб", "Sagittarius": "Стрельца", "Scorpius": "Скорпиона", "Taurus": "Тельца", "Virgo": "Девы"}
+		signs = {"Aquarius": "Водолея", "Aries": "Овна", "Cancer": "Рака",
+		 "Capricornus": "Козерога", "Gemini": "Близнецов", "Leo": "Льва",
+		  "Libra": "Весов", "Ophiuchus": "Змееносца", "Pisces": "Рыб",
+		   "Sagittarius": "Стрельца", "Scorpius": "Скорпиона",
+		    "Taurus": "Тельца", "Virgo": "Девы"}
+
 		for sign in signs:
 			if text_planet[-1] == sign:
-				update.message.reply_text("Сегодня {} проходит через созвездие {}".format(input_user[1],signs[text_planet[1]]))
-	
-
-	user_log = "User: {}, Chat id: {}, Message: {}".format(update.message.chat.username,update.message.chat.id, update.message.text)
-	update.message.reply_text(user_log)
-
+				update.message.reply_text("Сегодня {} проходит через созвездие {}".
+					format(input_user[1],signs[text_planet[1]]))
 
 
 
