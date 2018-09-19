@@ -105,6 +105,28 @@ def change_avatar(bot,update,user_data):
 	update.message.reply_text('Готово {}'.format(emo), reply_markup= get_keyboard())
 
 
+def word_count(bot,update,user_data):
+	if update.message.text =='/wordcount':
+		update.message.reply_text('''
+			Вы не написали слов после команды.\nНе обижайте бота!
+			''',reply_markup= get_keyboard())
+	else:
+		twosimbol = False
+		count_text1 =""
+		count_text = str(update.message.text)
+	
+		for simbol in count_text:
+			if simbol == '"':
+				twosimbol = not twosimbol
+
+			if twosimbol ==  True:
+					count_text1 += simbol
+		count_text1 = count_text1.split(' ')
+		num = len(count_text1)
+		text ='{} {}'.format( num, rus_nuber(num))
+		update.message.reply_text(text, reply_markup= get_keyboard())
+
+
 def talk_to_me(bot, update, user_data):
 	emo = get_user_emo(user_data)
 	#принимаем текст от пользователя
@@ -151,6 +173,20 @@ def get_user_emo(user_data):
 		return user_data['emo']
 
 
+def rus_nuber(num):
+	if num >= 11 and num <= 19:
+		word = 'слов'
+	else:
+		if num % 10 == 1:
+			word = 'слово'
+		elif num % 10 in (2,3,4):
+			word = 'слова'
+		else:
+			word = 'слов'
+	return word
+
+
+
 def main():
 	'''Тело бота. Главная функция.'''
 	mybot = Updater(settings.API_KEY,
@@ -162,6 +198,7 @@ def main():
 	dp.add_handler(CommandHandler("start", greet_user, pass_user_data=True))
 	dp.add_handler(CommandHandler("planet", astronom, pass_user_data=True))
 	dp.add_handler(CommandHandler('cat',send_cat_picture, pass_user_data=True))
+	dp.add_handler(CommandHandler('wordcount',word_count, pass_user_data=True))
 	
 	dp.add_handler(RegexHandler('^(Прислать дем)$', send_cat_picture, pass_user_data = True))
 	dp.add_handler(RegexHandler('^(Сменить аватарку)$', change_avatar, pass_user_data = True))
