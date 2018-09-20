@@ -128,16 +128,92 @@ def word_count(bot,update,user_data):
 
 
 def talk_to_me(bot, update, user_data):
-	emo = get_user_emo(user_data)
-	#принимаем текст от пользователя
-	user_text = "Привет {}{}! Ты написал: {}".format(
-		update.message.chat.first_name, emo, update.message.text)
+	calc_active = False
+	calc_text = list(update.message.text)
+	if (calc_text[-1] == '=') and ('*' or '/' or '-' or '+' in calc_text):
+		calc_active = True
+		user_text = calc_core1(calc_text)
 
-	logging.info("User: %s, Chat id: %s, Message: %s", update.message.chat.username, 
-		update.message.chat.id, update.message.text)
+	if calc_active == False :
+		emo = get_user_emo(user_data)
+		#принимаем текст от пользователя
+		user_text = "Привет {}{}! Ты написал: {}".format(
+			update.message.chat.first_name, emo, update.message.text)
+
+		logging.info("User: %s, Chat id: %s, Message: %s", update.message.chat.username, 
+			update.message.chat.id, update.message.text)
 
 	#отправляем текст пользователю
 	update.message.reply_text(user_text, reply_markup= get_keyboard())
+
+
+def calc_core1(calc_text):
+	number = False
+	sym1 = True
+	numbers = ['0','1','2','3','4','5','6','7','8','9','.']
+	operators = ['*','/','-','+']
+	a = []
+	a1 = 0
+	b = []
+	b1 = 0
+	a_ok = False
+	b_ok = False
+	#Убираем из списка '=' и записываем числа в отдельные списки.
+	del calc_text[-1]
+	for symbol in calc_text:
+		if symbol in numbers:
+			if sym1 == True:
+				a.append(symbol)
+			else:
+				b.append(symbol)
+		if symbol in operators:
+			c = symbol
+			sym1 = False
+	print(a,b,c)
+	#Удаляем из конца списков '.' 
+	while (a_ok and b_ok) == True:
+		if a[-1] != '.':
+			a_ok = True
+		else:
+			del a[-1]
+		if b[-1] != '.':
+			b_ok = True
+		else:
+			del b[-1]
+	print(a,b,c)
+	#Превращаем строки в числа
+	a1 = "".join(a)
+	if '.' in a:
+		a1 = float(a1)
+	else:
+		a1 = int(a1)
+
+	
+	b1 = "".join(b)
+	if '.' in b:
+		b1 = float(b1)
+	else:
+		b1 = int(b1)
+
+	print(a1,b1,c)
+
+	return calc_end(a1,b1,c)
+
+def calc_end(a1, b1, c):
+	if c == '*':
+		calc_answer = a1 * b1
+	if c == '/':
+		try:
+			calc_answer = a1 / b1
+			calc_answer = round(calc_answer,3)
+		except ZeroDivisionError:
+			calc_answer = 'Нельзя делить на ноль('
+
+	if c == '-':
+		calc_answer = a1 - b1
+	if c == '+':
+		calc_answer = a1 + b1
+	return str(calc_answer)
 
 
 def get_contact(bot, update, user_data):
