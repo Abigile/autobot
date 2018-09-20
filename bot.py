@@ -169,7 +169,6 @@ def calc_core1(calc_text):
 		if symbol in operators:
 			c = symbol
 			sym1 = False
-	print(a,b,c)
 	#Удаляем из конца списков '.' 
 	while (a_ok and b_ok) == True:
 		if a[-1] != '.':
@@ -180,7 +179,6 @@ def calc_core1(calc_text):
 			b_ok = True
 		else:
 			del b[-1]
-	print(a,b,c)
 	#Превращаем строки в числа
 	a1 = "".join(a)
 	if '.' in a:
@@ -195,9 +193,8 @@ def calc_core1(calc_text):
 	else:
 		b1 = int(b1)
 
-	print(a1,b1,c)
-
 	return calc_end(a1,b1,c)
+
 
 def calc_end(a1, b1, c):
 	if c == '*':
@@ -229,9 +226,6 @@ def get_location(bot, update, user_data):
 def get_keyboard():
 	contact_button = KeyboardButton('Контактные данные', request_contact = True)
 	locaton_button = KeyboardButton('Геолокация', request_location = True)
-
-	contact_button = KeyboardButton('Даные', request_contact = True)
-	locaton_button = KeyboardButton('Координаты', request_location = True)
 
 	my_keyboard = ReplyKeyboardMarkup([
 		['Прислать дем','Сменить аватарку'], 
