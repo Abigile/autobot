@@ -128,13 +128,27 @@ def word_count(bot,update,user_data):
 
 
 def talk_to_me(bot, update, user_data):
-	calc_active = False
-	calc_text = list(update.message.text)
-	if (calc_text[-1] == '=') and ('*' or '/' or '-' or '+' in calc_text):
-		calc_active = True
-		user_text = calc_core1(calc_text)
+	update_text = update.message.text
+	greet_user_deactiv = False
 
-	if calc_active == False :
+	calc_text = list(update_text)
+
+	calc_text1 = update_text.lower().split(" ")
+
+	print(calc_text1)
+	moon_active_text = ['когда','следующее','полнолуние']
+	#Калькулятор
+	if (calc_text[-1] == '=') and ('*' or '/' or '-' or '+' in calc_text):
+		greet_user_deactiv = True
+		user_text = calc_core1(calc_text)
+		update.message.reply_text(user_text, reply_markup= get_keyboard())
+	#Полнолуние
+	if [item in moon_active_text for item in calc_text1]  :
+		greet_user_deactiv = True
+		user_text = full_moon(update.message.text)
+		update.message.reply_text(user_text, reply_markup= get_keyboard())
+	#Деактивируемый блок
+	if greet_user_deactiv == False :
 		emo = get_user_emo(user_data)
 		#принимаем текст от пользователя
 		user_text = "Привет {}{}! Ты написал: {}".format(
@@ -142,10 +156,7 @@ def talk_to_me(bot, update, user_data):
 
 		logging.info("User: %s, Chat id: %s, Message: %s", update.message.chat.username, 
 			update.message.chat.id, update.message.text)
-
-	#отправляем текст пользователю
-	update.message.reply_text(user_text, reply_markup= get_keyboard())
-
+	
 
 def calc_core1(calc_text):
 	number = False
@@ -233,6 +244,21 @@ def get_keyboard():
 		], resize_keyboard = True
 		)
 	return my_keyboard
+
+
+def full_moon(text):
+	moon_text = (text).split(" ")
+	date = datetime.datetime.now()
+	date = date.strftime('%Y/%m/%d')
+
+	if 'после' in moon_text:
+		moon_text.remove('после')
+		date = datetime.datetime.strptime(moon_text[-1],'%Y-%m-%d')
+		del moon_text[-1]
+	if len(moon_text) == 3:
+		answer_moon = ephem.next_full_moon(date)
+		moon_text = 'Следующее полнолуние: {}'.format(answer_moon)
+		return moon_text
 
 
 def get_user_emo(user_data):
